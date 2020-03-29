@@ -1,9 +1,11 @@
 <section class="artist-search">
     {{#each album}}
     <div class="cardsContainer">
-            <span><img src={{this.images.0.url}}></span>
+            <span><img src={{this.images.0.url}} style="width:230px"></span>
+            <div class="cardBody">
             <p>{{this.name}}</p>
             <a class="btn" href="/tracks/{{this.id}}">View Tracks</a>
+            </div>
     </div>
     {{/each}}
 </section>
